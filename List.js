@@ -1,10 +1,6 @@
 //链表LinkedList
-//反观数组，数组的缺点：
-//1.需要手动扩容2.插入数据的成本高
-//反观链表，内存非连续，由***元素***和***一个指针***组成，插入、删除数据效率高
-//但是链表无法通过下标访问元素，需要从头一个个访问，慢
 
-//链表基本结构封装
+//链表基本结构封装:Node类+head属性
 function LinkedList (){
     //内部的类：节点类
     function Node(data,next){
@@ -13,7 +9,7 @@ function LinkedList (){
     }
     //必要的头部属性head
     this.head = null
-    this.length = 0 
+    this.length = 0 //最好再加一个属性length
 }
 
 
