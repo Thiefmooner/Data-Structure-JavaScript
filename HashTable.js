@@ -15,6 +15,8 @@ function HashTable () {
 
     //插入
     HashTable.prototype.put = function (key,value) {
+        //根据key获得对应index
+        var index = this.HashFunction(key,this.limit)
 
 
     }
